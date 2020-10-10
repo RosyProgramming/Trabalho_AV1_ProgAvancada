@@ -10,10 +10,6 @@ public class Filme extends CadastroFilme{
 	public static String[] getAtores;
 	
 	
-	public void setAtores(String Atores) {
-		this.Atores = Atores;
-	}
-	
 	public static String[] getGetAtores() {
 		return getAtores;
 	}
@@ -23,8 +19,8 @@ public class Filme extends CadastroFilme{
 		super(Atores);
 		this.titulo = titulo;
 		this.genero = genero;
-		this.Atores = Atores;
-		this.dataLancamento = dataLancamento;
+		Filme.Atores = Atores;
+		Filme.dataLancamento = dataLancamento;
 	}
 		
 

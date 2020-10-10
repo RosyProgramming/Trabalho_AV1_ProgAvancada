@@ -53,7 +53,7 @@ public class CadastroFilme extends Principal{
 		return Atores;
 	}
 
-	public static void setAtores(String atores) {
+	public void setAtores(String atores) {
 		Atores = atores;
 	}
 
