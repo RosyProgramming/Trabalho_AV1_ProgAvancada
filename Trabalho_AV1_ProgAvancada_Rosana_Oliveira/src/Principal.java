@@ -9,7 +9,7 @@ public class Principal {
 		 Filme filme1 = new Filme("A culpa das estrelas", "Romance","JOHN GREEN", new SimpleDateFormat("dd/MM/yyyy").parse("10/07/2012"));
 		 Filme filme2 = new Filme("Antes que eu vá", "Drama,Suspense","Ry Ruso-Young", new SimpleDateFormat("dd/MM/yyyy").parse("18/05/2017"));
 		 Filme filme3 = new Filme("6 Dias", "Ação","Toa Fraser", new SimpleDateFormat("dd/MM/yyyy").parse("09/09/2017"));
-		 Filme filme4 = new Filme("Cinco passos de você", "Romance,Drama","Justin Baldoni", new SimpleDateFormat("dd/MM/yyyy").parse("21/03/2019"));
+		 Filme filme4 = new Filme("TOMB RAIDER", "Ação","Alicia Vikander", new SimpleDateFormat("dd/MM/yyyy").parse("21/03/2019"));
 		 
 		 /*
 		 System.out.println(filme1);
