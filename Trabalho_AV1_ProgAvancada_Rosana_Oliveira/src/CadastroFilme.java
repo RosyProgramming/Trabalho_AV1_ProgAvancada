@@ -2,26 +2,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CadastroFilme{
+public class CadastroFilme extends Principal{
 	
-	public static void main(String[] args) {
-		
-		List<String> listFilme = new ArrayList<String>();
-		
-		/*
-		Filme filme1 = new Filme(titulo, genero, Atores, dataLancamento); 
-		filme1.setAtores("Culpa das estrelas");
-		
-		listFilme.add("O filho de Deus","O Atirador: legado");
-		listFilme.remove();
-		
-		for(int i=0; i < listFilme.size(); i++){
-			System.out.println(listFilme.get(i).getAtores); 
-			} 
-		*/
-	}
-	
-
 	private static String titulo;
 	private static String genero;
 	private static String Atores;
@@ -30,14 +12,25 @@ public class CadastroFilme{
 	private ArrayList<Principal> Principal;
 	
 	
-	/*
-		List<Filme> listFilme = new ArrayList <Filme>();
-		Filme filme1 = new Filme(); 
-		filme1.setAtores("Caio");
-		//mostrar lista
-		for(int i=0; i < listaFilme.size(); i++){
-		System.out.println(listaFilme.get(i).getAtores); 
-		} 
-		
-		*/
+	public CadastroFilme(String titulo) {
+		super();
+		this.titulo = titulo;
+		this.Filme = new ArrayList<Filme>();
+		this.Principal = new ArrayList<Principal>();
+	}
+	
+	public static void CadastraFilme(Filme F) {
+		Filme.add(F);
+	}
+
+	public void excluiFilme(Filme F) {
+		Filme.remove(F);
+	}
+
+	public static void listaFilme() {
+		for (Filme F: Filme) {
+			System.out.println(F.toString());
+		};
+	}
+	
 }

@@ -1,7 +1,7 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Filme {
+public class Filme extends CadastroFilme{
 	
 	private String titulo;
 	private String genero;
@@ -19,8 +19,8 @@ public class Filme {
 	}
 
 
-	public Filme(String titulo, String genero,String atores, Date dataLancamento) {
-		super();
+	public Filme(String titulo, String genero,String Atores, Date dataLancamento) {
+		super(Atores);
 		this.titulo = titulo;
 		this.genero = genero;
 		this.Atores = Atores;
